@@ -27,7 +27,7 @@ nameForm.addEventListener('submit', function(event) {
     }
 
     document.getElementById('loader').style.display = 'none';    
-    resPage.innerHTML = `Hey <b>${fullName}</b>, ${res} <b>${sum}</b> bob tu. Ni rahisi pay Bill 303030 account number 2042607226`;
+    resPage.innerHTML = `Hey <b>${fullName}</b>, ${res} <b>${sum}</b> bob tu na TUNARUDI CHURCH!. Ni rahisi pay Bill 303030 account number 2042607226`;
     divRes.style.display = 'inline';
 });
 
