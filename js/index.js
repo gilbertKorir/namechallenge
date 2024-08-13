@@ -15,17 +15,20 @@ nameForm.addEventListener('submit', function(event) {
     }
 
     let sum = 0;
-    let res = 'tunarudi church. ';
+    let res = 'today you are our sponsor. only Ksh ';
+    
+    // Filter out spaces and sum the character codes
     for (let i = 0; i < fullName.length; i++) {
         const char = fullName[i];
-        let charCode = char.toLowerCase().charCodeAt(0) - 96; // Normalize to lowercase and get char code
-        sum += charCode;
+        if (char !== ' ') { // Exclude spaces
+            let charCode = char.toLowerCase().charCodeAt(0) - 96; // Normalize to lowercase and get char code
+            sum += charCode;
+        }
     }
 
     document.getElementById('loader').style.display = 'none';    
     resPage.innerHTML = `Hey <b>${fullName}</b>, ${res} <b>${sum}</b> bob tu. Ni rahisi pay Bill 303030 account number 2042607226`;
     divRes.style.display = 'inline';
-
 });
 
 
@@ -40,4 +43,4 @@ exitButton.addEventListener('click', function() {
 });
 
 // Schedule the window to close after 40 seconds
-var timer = setTimeout(closeWindow, 60000);
+var timer = setTimeout(closeWindow, 120000);
