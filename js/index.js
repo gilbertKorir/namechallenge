@@ -15,7 +15,7 @@ nameForm.addEventListener('submit', function(event) {
     }
 
     let sum = 0;
-    let res = 'today you are our sponsor. only Ksh ';
+    let res = 'today you are our sponsor.  ';
     
     // Filter out spaces and sum the character codes
     for (let i = 0; i < fullName.length; i++) {
